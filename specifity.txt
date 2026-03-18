@@ -1,0 +1,7 @@
+Style "p" affects every paragraph.
+
+Style ".info" affects elements with that class.
+
+Style "warning" affects elements with that id.
+
+STyle "#warning.info" affects only elements with that id and that class due to how the browser prioritizes the elments (it prioritizes the coplex ones with their complex style counterparts).
