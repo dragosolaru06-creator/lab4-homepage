@@ -1,0 +1,53 @@
+/* External CSS */
+
+h1 {
+    color: purple;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* Specificity exercise */
+
+p {
+    color: black;
+    font-family: Arial;
+}
+
+.info {
+    color: blue;
+    font-family: Verdana;
+}
+
+#warning {
+    color: red;
+    font-family: "Courier New";
+}
+
+#warning.info {
+    color: orange;
+}
+
+/* Table styling */
+.skills-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #f2f2f2;
+}
+
+.skills-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.skills-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
