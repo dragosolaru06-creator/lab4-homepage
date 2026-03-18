@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS (REQUIRED) -->
+    <style>
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+    </style>
 </head>
 <body>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
@@ -17,8 +29,9 @@
         </nav>
     </header>
 
-   
-        <!-- Inline CSS -->
+    <main id="main-content">
+
+        <!-- Inline CSS (REQUIRED) -->
         <h2 style="margin-top: 30px;">Personal Skills</h2>
 
         <!-- Personal Skills Table -->
@@ -50,7 +63,7 @@
             </tbody>
         </table>
 
-    <main id="main-content">
+        <!-- FORM -->
         <form aria-label="Contact form">
             <fieldset>
                 <legend>Your Details</legend>
@@ -64,8 +77,7 @@
                 </div>
                 <div>
                     <label for="phone">Phone (optional):</label>
-                    <input type="tel" id="phone" name="phone" aria-describedby="phone-help">
-                    <span id="phone-help">Please include country code if outside the UK.</span>
+                    <input type="tel" id="phone" name="phone">
                 </div>
             </fieldset>
 
@@ -81,140 +93,42 @@
                 </div>
             </fieldset>
 
-            <fieldset>
-                <legend>How did you hear about us?</legend>
-                <div>
-                    <input type="radio" id="friend" name="source" value="friend">
-                    <label for="friend">From a friend</label>
-                </div>
-                <div>
-                    <input type="radio" id="search" name="source" value="search">
-                    <label for="search">Search engine</label>
-                </div>
-                <div>
-                    <input type="radio" id="social" name="source" value="social">
-                    <label for="social">Social media</label>
-                </div>
-                <div>
-                    <input type="radio" id="other" name="source" value="other">
-                    <label for="other">Other</label>
-                </div>
-            </fieldset>
-
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+            <button type="submit">Submit</button>
         </form>
 
-        <!-- ========================= -->
-        <!-- MESSAGES RECEIVED TABLE   -->
-        <!-- ========================= -->
+        <!-- MESSAGES TABLE -->
         <section>
             <h2>Messages Received</h2>
 
-            <table border="1">
-                <caption>Messages Received from Users</caption>
-
+            <table class="data-table">
                 <thead>
                     <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Message</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Priority</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                        <th>Priority</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td rowspan="2">001</td>
-                        <th scope="row" rowspan="2">Alice Brown</th>
-                        <td rowspan="2"><a href="mailto:alice@example.com">alice@example.com</a></td>
+                        <td>001</td>
+                        <td>Alice Brown</td>
+                        <td>alice@example.com</td>
                         <td>Great website!</td>
                         <td>2026-02-10</td>
                         <td>Low</td>
                     </tr>
-                    <tr>
-                        <td>Can you add more projects?</td>
-                        <td>2026-02-11</td>
-                        <td>Medium</td>
-                    </tr>
 
                     <tr>
                         <td>002</td>
-                        <th scope="row">John Smith</th>
-                        <td><a href="mailto:john@example.com">john@example.com</a></td>
-                        <td>I found a bug on the contact page.</td>
+                        <td>John Smith</td>
+                        <td>john@example.com</td>
+                        <td>Bug found</td>
                         <td>2026-02-12</td>
                         <td>High</td>
-                    </tr>
-
-                    <tr>
-                        <td rowspan="2">003</td>
-                        <th scope="row" rowspan="2">Maria Lopez</th>
-                        <td rowspan="2"><a href="mailto:maria@example.com">maria@example.com</a></td>
-                        <td>Love the design!</td>
-                        <td>2026-02-13</td>
-                        <td>Low</td>
-                    </tr>
-                    <tr>
-                        <td>Looking forward to updates.</td>
-                        <td>2026-02-14</td>
-                        <td>Low</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- ========================= -->
-        <!-- CHECKLIST TABLE ADDED     -->
-        <!-- ========================= -->
-        <section>
-            <h2>Contact Page Checklist</h2>
-
-            <table border="1">
-                <caption>Checklist for Contact Page Completion</caption>
-
-                <thead>
-                    <tr>
-                        <th scope="col">Task</th>
-                        <th scope="col">Status</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">Add basic HTML structure</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Add skip link for accessibility</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Add header and navigation</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Add contact form</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Add Messages Received table</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Add checklist table</th>
-                        <td>✔ Completed</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Validate HTML</th>
-                        <td>Pending</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Push to GitHub</th>
-                        <td>Pending</td>
                     </tr>
                 </tbody>
             </table>
@@ -223,7 +137,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2026 Your Company Name</p>
     </footer>
+
 </body>
 </html>
