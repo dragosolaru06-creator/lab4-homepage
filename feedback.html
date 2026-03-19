@@ -2,144 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
         <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="feedback.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
+    <!-- MAIN -->
     <main>
+
         <h2>Send Us a Message</h2>
 
-        <form action="#" method="post">
+        <form>
 
-            <!-- Fieldset 1: Your Details -->
+            <!-- DETAILS -->
             <fieldset>
                 <legend>Your Details</legend>
 
-                <p>
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <p>
-                    <label for="email">E-mail Address:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <p>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" id="phone" name="phone">
-                </p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
             </fieldset>
 
-            <!-- Fieldset 2: Your Message -->
+            <!-- MESSAGE -->
             <fieldset>
                 <legend>Your Message</legend>
 
-                <p>
-                    <label for="subject">Subject/Topic:</label><br>
-                    <input type="text" id="subject" name="subject" required>
-                </p>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
 
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </fieldset>
 
-            <!-- Fieldset 3: How Did You Hear About Us -->
+            <!-- REFERRAL -->
             <fieldset>
                 <legend>How did you hear about us?</legend>
 
-                <p>
-                    <input type="radio" id="search" name="referral" value="search" required>
-                    <label for="search">Search Engine</label>
-                </p>
-
-                <p>
-                    <input type="radio" id="social" name="referral" value="social">
-                    <label for="social">Social Media</label>
-                </p>
-
-                <p>
-                    <input type="radio" id="friend" name="referral" value="friend">
-                    <label for="friend">Friend or Family</label>
-                </p>
-
-                <p>
-                    <input type="radio" id="other" name="referral" value="other">
-                    <label for="other">Other</label>
-                </p>
+                <label><input type="radio" name="referral" value="search" required> Search Engine</label>
+                <label><input type="radio" name="referral" value="social"> Social Media</label>
+                <label><input type="radio" name="referral" value="friend"> Friend</label>
+                <label><input type="radio" name="referral" value="other"> Other</label>
             </fieldset>
 
-            <!-- Submit Button -->
-            <p>
-                <button type="submit">Submit</button>
-            </p>
+            <button type="submit">Submit</button>
 
         </form>
 
-        <!-- Messages Table -->
+        <!-- TABLE -->
         <section>
             <h2>Received Messages</h2>
-            <table border="1">
+
+            <table>
                 <thead>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Subject</th>
-                        <th>Message Date</th>
+                        <th>Date</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
                         <td>John Smith</td>
-                        <td>john.smith@email.com</td>
+                        <td>john@email.com</td>
                         <td>Course Inquiry</td>
                         <td>2026-03-10</td>
                     </tr>
+
                     <tr>
                         <td>Sarah Johnson</td>
-                        <td>sarah.j@email.com</td>
-                        <td>Website Feedback</td>
+                        <td>sarah@email.com</td>
+                        <td>Feedback</td>
                         <td>2026-03-09</td>
-                    </tr>
-                    <tr>
-                        <td>Mike Davis</td>
-                        <td>mike.davis@email.com</td>
-                        <td>Technical Support</td>
-                        <td>2026-03-08</td>
-                    </tr>
-                    <tr>
-                        <td>Emma Wilson</td>
-                        <td>emma.wilson@email.com</td>
-                        <td>Project Collaboration</td>
-                        <td>2026-03-07</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2026 Your Company Name</p>
     </footer>
 
 </body>
