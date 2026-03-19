@@ -4,23 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Internal CSS (REQUIRED) -->
-    <style>
-        h2 {
-            text-align: center;
-            color: darkblue;
-        }
-    </style>
 </head>
 <body>
-
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header>
+        <header>
         <h1>Contact Us</h1>
         <nav aria-label="Main navigation">
             <ul>
@@ -29,106 +16,89 @@
         </nav>
     </header>
 
-    <main id="main-content">
 
-        <!-- Inline CSS (REQUIRED) -->
-        <h2 style="margin-top: 30px;">Personal Skills</h2>
+   <section>
+                <table border="1">
+                    <caption><h2>Personal Skills</h2></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Current Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Design (HTML/CSS/JS)</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>Programming (C++, Python, C)</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Game Design</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total Skills: 4</td>
+                        </tr>
+                    </tfoot>
+                </table>
 
-        <!-- Personal Skills Table -->
-        <table class="skills-table">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Advanced</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Intermediate</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- FORM -->
-        <form aria-label="Contact form">
-            <fieldset>
-                <legend>Your Details</legend>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="phone">Phone (optional):</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Your Message</legend>
-                <div>
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-            </fieldset>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- MESSAGES TABLE -->
+        <!-- ========================= -->
+        <!-- CHECKLIST TABLE ADDED     -->
+        <!-- ========================= -->
         <section>
-            <h2>Messages Received</h2>
+            <h2>Contact Page Checklist</h2>
 
-            <table class="data-table">
+            <table border="1">
+                <caption>Checklist for Contact Page Completion</caption>
+
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Message</th>
-                        <th>Date</th>
-                        <th>Priority</th>
+                        <th scope="col">Task</th>
+                        <th scope="col">Status</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>001</td>
-                        <td>Alice Brown</td>
-                        <td>alice@example.com</td>
-                        <td>Great website!</td>
-                        <td>2026-02-10</td>
-                        <td>Low</td>
+                        <th scope="row">Add basic HTML structure</th>
+                        <td>✔ Completed</td>
                     </tr>
-
                     <tr>
-                        <td>002</td>
-                        <td>John Smith</td>
-                        <td>john@example.com</td>
-                        <td>Bug found</td>
-                        <td>2026-02-12</td>
-                        <td>High</td>
+                        <th scope="row">Add skip link for accessibility</th>
+                        <td>✔ Completed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Add header and navigation</th>
+                        <td>✔ Completed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Add contact form</th>
+                        <td>✔ Completed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Add Messages Received table</th>
+                        <td>✔ Completed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Add checklist table</th>
+                        <td>✔ Completed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Validate HTML</th>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Push to GitHub</th>
+                        <td>Pending</td>
                     </tr>
                 </tbody>
             </table>
@@ -137,8 +107,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Company Name</p>
+        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
     </footer>
-
+</body>
+</html>
+        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
